@@ -1,0 +1,69 @@
+.login-form-mat {
+  max-width: 500px;
+  margin: 10rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+::ng-deep .mat-mdc-form-field .mdc-text-field--filled {
+  background-color: #f4f4f5 !important;
+  border-radius: 8px;
+}
+
+::ng-deep .mat-mdc-form-field input.mat-mdc-input-element {
+  color: #1a1a1a;
+}
+
+.sign-buttons {
+  background:var(--button-gradient);
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 72, 255, 0.25);
+}
+
+.sign-buttons:hover {
+  background: var(--button-gradient-hover);
+}
+
+.sign-buttons:disabled {
+  background: #e0e0e0;
+  color: #888;
+  border: none;
+  cursor: not-allowed;
+}
+
+.signup-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-section p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.mat-error {
+  font-size: 0.8rem;
+  color: #d32f2f !important;
+}
+
+@media (max-width: 500px) {
+  .login-form-mat {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+}

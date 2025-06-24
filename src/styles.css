@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    margin:0;
+    padding: 0%;
+    color: #0f172a;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --primary: #7C3AED;
+  --secondary: #2563EB;
+  --button-gradient: linear-gradient(90deg, #7C3AED, #D946EF);
+  --button-gradient-hover: linear-gradient(90deg, #D946EF, #7C3AED);
+  --card-bg: #f5f5ff;
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+}
+html {
+  scroll-behavior: smooth;
+  
+}
+
+.fullscreen-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  color: black;
+}
+a:hover{
+    font-size: 1.001rem;
+      color: #d900ff;
+}
+html, body { height: 100%; }
+html, body { height: 100%; }

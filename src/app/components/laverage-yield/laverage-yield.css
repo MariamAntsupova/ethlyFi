@@ -1,0 +1,63 @@
+.leverage-yield {
+  text-align: center;
+  padding: 4rem;
+}
+
+.leverage-yield h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.leverage-yield h2 .highlight {
+  color: #437eff;
+}
+
+.leverage-yield .steps {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.leverage-yield .step {
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 180px;
+  transition: transform 0.3s ease;
+}
+
+.leverage-yield .step:hover {
+  transform: translateY(-5px);
+}
+
+.leverage-yield .step img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leverage-yield .step img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.leverage-yield .step p {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .leverage-yield .steps {
+    justify-content: center;
+  }
+
+  .leverage-yield .step {
+    width: 100%;
+    max-width: 300px;
+  }
+}

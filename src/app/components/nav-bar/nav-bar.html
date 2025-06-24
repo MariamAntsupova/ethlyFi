@@ -1,0 +1,17 @@
+<header class="navbar" [class.scrolled]="isScrolled">
+    <div class="logo"><a href="#">Ethly.Fi</a></div>
+
+    <div class="nav-menu">
+
+        <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+        <nav class="nav-links" [class.show]="menuOpen">
+                <a href="#features" (click)="closeMenu()">pETH</a>
+                <a href="#collaborations" (click)="closeMenu()">Docs</a>
+                <a href="#footer" (click)="closeMenu()">Audits</a>
+        </nav>
+    </div>
+    <div class="nav-buttons">
+        <button class="auth-button"  type="button" [routerLink]="'/login'">Login</button>
+        <button class="auth-button"  type="button" [routerLink]="'/signup'">Sing Up</button>
+    </div>
+</header>

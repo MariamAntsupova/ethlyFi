@@ -1,0 +1,21 @@
+<section class="features-section">
+  <div class="top-section">
+    <h2 class="title">Primary <span class="highlight">Features</span></h2>
+    <div class="buttons">
+        <button class="nav-btn" (click)="prev()">❮</button>
+        <button class="nav-btn" (click)="next()">❯</button>
+    </div>
+  </div>
+
+  <div class="slider-wrapper">
+
+    <div class="cards-container">
+      <div class="feature-card" *ngFor="let f of getVisibleFeatures()">
+        <div class="icon">{{ f.icon }}</div>
+        <h3>{{ f.title }}</h3>
+        <p>{{ f.desc }}</p>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,144 @@
+.signup-form-mat {
+  max-width: 500px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.full-width {
+  width: 100%;
+}
+
+::ng-deep .mat-mdc-form-field .mdc-text-field--filled {
+  background-color: #f4f4f5 !important;
+  border-radius: 8px;
+}
+
+.mat-mdc-form-field input.mat-mdc-input-element {
+  color: #1a1a1a;
+}
+
+.phone-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.dial-field {
+  flex: 0 0 30%;
+}
+
+.mobile-field {
+  flex: 1 1 70%;
+}
+
+.password-field .mat-icon-button:hover .mat-icon {
+  color: #ff7a00;
+}
+
+.mat-select-panel {
+  background: #ffffff;
+  color: #333;
+}
+
+.mat-option {
+  color: #1a1a1a;
+}
+
+.mat-option:hover {
+  background: rgba(255, 122, 0, 0.1);
+}
+
+.mat-selected {
+  background: #ff7a00 !important;
+  color: white;
+}
+
+.mat-datepicker-content,
+.mat-calendar {
+  background: #fff;
+  color: #1a1a1a;
+}
+
+.mat-calendar-body-cell-content {
+  color: #1a1a1a;
+}
+
+.mat-calendar-body-selected .mat-calendar-body-cell-content {
+  background-color: #ff7a00 !important;
+  color: white !important;
+}
+
+.mat-calendar-body-today .mat-calendar-body-cell-content {
+  border-color: #ff7a00 !important;
+}
+
+.mat-mdc-option.mdc-list-item {
+  background-color: white;
+  color: #1a1a1a;
+}
+
+.mat-mdc-option.mdc-list-item:hover {
+  background: var(--button-gradient);
+}
+
+.mat-error {
+  font-size: 0.8rem;
+  color: #d32f2f !important;
+}
+
+.signin-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin-section p {
+  font-size: smaller;
+  color: #555;
+}
+
+.sign-buttons {
+  background: var(--button-gradient);
+  color: white;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.sign-buttons:hover:not(:disabled) {
+  background: var(--button-gradient-hover);
+}
+
+.sign-buttons:disabled {
+  background: #e0e0e0;
+  color: #888;
+  cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+  .signup-form-mat {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .phone-row {
+    flex-direction: column;
+  }
+
+  .dial-field,
+  .mobile-field {
+    width: 100%;
+    flex: none;
+  }
+}

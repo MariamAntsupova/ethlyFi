@@ -1,0 +1,16 @@
+<div class="faq-section">
+  <h2>Ask Us <span class="highlight">Anything</span></h2>
+  <p class="subtext">Have any questions? we're have to guide you.</p>
+
+  <div class="faq-item" *ngFor="let faq of faqs; let i = index">
+    <div class="faq-question" (click)="toggle(i)">
+      <span [innerHTML]="faq.open ? '<b>' + faq.question + '</b>' : faq.question"></span>
+      <span class="icon">{{ faq.open ? '↘' : '↗' }}</span>
+    </div>
+
+    <div class="faq-answer" *ngIf="faq.open">
+      <p><strong>{{ faq.question }}</strong></p>
+      <p>{{ faq.answer }}</p>
+    </div>
+  </div>
+</div>
